@@ -167,7 +167,7 @@ export default class SwitchButton extends Component {
                                                     left: 0
                                                 }]}
                                 >
-                                    <Text style={[ this.state.activeSwitch === 1 ? { color: this.props.activeFontColor || "#fff" } : { color: this.props.fontColor || "#b1b1b1" }  ]}>
+                                    <Text style={[ this.state.activeSwitch === 1 ? { color: this.props.activeFontColor || "#fff" } : { color: this.props.fontColor || "#b1b1b1" },this.props.textStyle  ]}>
                                         { this.props.text1 || 'ON' }
                                     </Text>
                                 </View>
@@ -180,7 +180,7 @@ export default class SwitchButton extends Component {
                                                 right:0
                                             }]}
                                 >
-                                    <Text style={[ this.state.activeSwitch === 2 ? { color: this.props.activeFontColor || "#fff" } : { color: this.props.fontColor || "#b1b1b1" }  ]}>
+                                    <Text style={[ this.state.activeSwitch === 2 ? { color: this.props.activeFontColor || "#fff" } : { color: this.props.fontColor || "#b1b1b1" },this.props.textStyle  ]}>
                                     { this.props.text2 || 'OFF' }
                                     </Text>
                                 </View>
